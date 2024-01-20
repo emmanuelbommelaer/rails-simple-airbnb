@@ -1,0 +1,7 @@
+<h1>All our Flats (<%= @flats.count %>)</h1>
+
+<div class="row row-cols-2 row-cols-md-4">
+  <% @flats.each do |flat| %>
+      <%= render flat %>
+  <% end %>
+</div>
